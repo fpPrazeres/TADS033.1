@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Felipe Pimentel Prazeres</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulário de Contato</h1>
+    <div class="form-section">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm" action="mailto:felipepp@gmail.com" method="post" enctype="text/plain"></form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="form-group">
+                    <label for="firstName">Nome:<font color=red>*</font></label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Insira seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Sobrenome:<font color=red>*</font></label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Insira seu sobrenome" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:<font color=red>*</font></label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:<font color=red>*</font></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Insira seu e-mail" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <div class="form-group">
+                    <label for="message" >Mensagem:<font color=red>*</font></label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Insira o que deseja."rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Outras Informações</legend>
+                <div class="form-group">
+                    <label for="language">Língua aplicada no serviço:</label>
+                    <select class="form-control" id="language" name="language" required>
+                        <option value="">Selecione...</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Francês</option>
+                        <option value="portugues">Português (pt-br)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fileUpload">Upload do protótipo:</label>
+                    <input type="file" class="form-control-file" id="fileUpload" name="fileUpload" accept=".pdf, .doc, .docx, .jpeg, .jpg, .png" required>
+                </div>
+                <div class="form-group">
+                    <label for="languages">Linguagens preferidas:</label>
+                    <select multiple class="form-control" id="languages" name="languages[]" required>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="PHP">PHP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de banco de dados recomendado:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dbType" id="mysql" value="mysql" required>
+                        <label class="form-check-label" for="mysql">MySQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dbType" id="postgresql" value="postgresql" required>
+                        <label class="form-check-label" for="postgresql">PostgreSQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dbType" id="mongodb" value="mongodb" required>
+                        <label class="form-check-label" for="mongodb">MongoDB</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dbType" id="mongodb" value="mongodb" required>
+                        <label class="form-check-label" for="mongodb">N/A</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dbType" id="mongodb" value="mongodb" required>
+                        <label class="form-check-label" for="mongodb">Outra</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meetingShift">Turno preferido para reuniões:</label>
+                    <select class="form-control" id="meetingShift" name="meetingShift" required>
+                        <option value="">Selecione...</option>
+                        <option value="manhã">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="meetingTime">Melhor horário sugerido para reuniões:</label>
+                    <input type="time" class="form-control" id="meetingTime" name="meetingTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="deliveryDate">Previsão de entrega desejada:</label>
+                    <input type="date" class="form-control" id="deliveryDate" name="deliveryDate" required>
+                </div>
+            </fieldset>
+
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+<div style="text-align: right;"><font color=red>*</font>Campos Obrigatórios</div>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        if (!this.checkValidity()) {
+            event.preventDefault();
+            alert('Por favor, preencha todos os campos obrigatórios.');
+        }
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
