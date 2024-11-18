@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+
+}
+
+
+html, body 
+
+
+main {
+    display: flex;
+
+}
+
+#container {
+    display: flex;
+
+}
+
+#container1 {
+    display: flex;
+    width: 328px;
+    height: 945px;
+    padding: 16px;
+    background: linear-gradient(180deg, #15025A 0%, #110050 100%);
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+img {
+    margin-top: 10px;
+    width: 120px;
+    height: 74.66px;
+}
+
+
+#container2 {
+    display: flex;
+    height: 945px;
+    background-color: #f7f9fa;
+    padding: 20px 24px;
+
+
+    max-width: 3000px;
+    justify-content: center;
+}
+
+#container2-1 {
+    max-width: 3000px;
+    background-color: #f7f9fa;
+
+}
+
+#container2-1 > p {
+    margin-bottom: 10px;
+
+}
+
+#name1  {
+    margin-bottom: 8px;
+}
+
+
+h1 {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+
+}
+
+.botao {
+    display: flex;
+
+    max-width: 2000px;
+    height: 64px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    align-items: center;
+    padding: 0px 16.5px;
+}
+
+#agendar > p {
+    align-self: flex-end;
+}
+
+.bi {
+    color: #000;
+    font-size: 1.4em;
+    flex-basis: 40px;
+}
+
+
+
+.modal-title {
+    margin-bottom: 20px;
+}
+
+
+
+#botao-model-filial {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#botao-model-filial:hover {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+#botao-model-servico {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#botao-model-servico:hover {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+#botao-model-sub {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#botao-model-sub:hover {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+
+
+.botao:hover {
+    background-color: #eeeeee;
+}
+
+
